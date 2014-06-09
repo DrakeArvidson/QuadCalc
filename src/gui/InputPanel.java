@@ -31,17 +31,17 @@ public class InputPanel extends JPanel {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         panelA.setLayout(new BoxLayout(panelA, BoxLayout.X_AXIS));
-        panelA.add(new JLabel("A = "));
+        panelA.add(new JLabel("a = "));
         inA.setMaximumSize(new Dimension(100, 50));
         panelA.add(inA);
 
         panelB.setLayout(new BoxLayout(panelB, BoxLayout.X_AXIS));
-        panelB.add(new JLabel("B = "));
+        panelB.add(new JLabel("b = "));
         inB.setMaximumSize(new Dimension(100, 50));
         panelB.add(inB);
 
         panelC.setLayout(new BoxLayout(panelC, BoxLayout.X_AXIS));
-        panelC.add(new JLabel("C = "));
+        panelC.add(new JLabel("c = "));
         inC.setMaximumSize(new Dimension(100, 50));
         panelC.add(inC);
 
