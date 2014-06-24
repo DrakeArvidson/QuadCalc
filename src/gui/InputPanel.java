@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
 
 import background.CalculateController;
 import background.ClearController;
@@ -36,16 +37,43 @@ public class InputPanel extends JPanel {
 		panelA.setLayout(new BoxLayout(panelA, BoxLayout.X_AXIS));
 		panelA.add(new JLabel("a = "));
 		inA.setMaximumSize(new Dimension(100, 50));
+		inA.addFocusListener(new java.awt.event.FocusAdapter() {
+			public void focusGained(java.awt.event.FocusEvent evt) {
+				SwingUtilities.invokeLater(new Runnable() {
+					public void run() {
+						inA.selectAll();
+					}
+				});
+			}
+		});;
 		panelA.add(inA);
 
 		panelB.setLayout(new BoxLayout(panelB, BoxLayout.X_AXIS));
 		panelB.add(new JLabel("b = "));
 		inB.setMaximumSize(new Dimension(100, 50));
+		inB.addFocusListener(new java.awt.event.FocusAdapter() {
+			public void focusGained(java.awt.event.FocusEvent evt) {
+				SwingUtilities.invokeLater(new Runnable() {
+					public void run() {
+						inB.selectAll();
+					}
+				});
+			}
+		});;
 		panelB.add(inB);
 
 		panelC.setLayout(new BoxLayout(panelC, BoxLayout.X_AXIS));
 		panelC.add(new JLabel("c = "));
 		inC.setMaximumSize(new Dimension(100, 50));
+		inC.addFocusListener(new java.awt.event.FocusAdapter() {
+			public void focusGained(java.awt.event.FocusEvent evt) {
+				SwingUtilities.invokeLater(new Runnable() {
+					public void run() {
+						inC.selectAll();
+					}
+				});
+			}
+		});;
 		panelC.add(inC);
 
 		calc.addActionListener(controller);
