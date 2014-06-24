@@ -16,7 +16,11 @@ public class InfoListener implements ActionListener {
 	}
 	
 	public void actionPerformed(ActionEvent event) {
-		JOptionPane.showMessageDialog(null, "This is a simple Java application created by Drake Arvidson.");
+		
+		String message = "<html><h1>About</h1>" +
+						"<p>This is a simple Java application, created to solve for x when you have a Quadratic Equation</p>" +
+						"<h3>Created by: Drake Arvidson</h3>";
+		JOptionPane.showMessageDialog(null, message);
 	}
 
 }
