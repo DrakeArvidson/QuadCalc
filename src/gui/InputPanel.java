@@ -110,6 +110,15 @@ public class InputPanel extends JPanel {
 		results.setText(answer);
 	}
 	
+	public boolean anyEmpty() {
+		if(inA.getText().equals("") || inB.getText().equals("") || inC.getText().equals("")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 	public void clearText() {
 		inA.setText("");
 		inB.setText("");
