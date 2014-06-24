@@ -14,6 +14,7 @@ import background.QuitListener;
 import background.ResetListener;
 
 
+@SuppressWarnings("serial")
 public class QuadFrame extends JFrame {
     public JMenuBar menu;
     public TitlePanel title;
@@ -48,7 +49,7 @@ public class QuadFrame extends JFrame {
         info.addActionListener(infoListener);
         
         JMenuItem howTo = new JMenuItem("How-To");
-        howTo.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.KeyEvent.CTRL_MASK));
+        howTo.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.KeyEvent.CTRL_MASK));
         howTo.addActionListener(helpListener);
         
         file.add(reset);

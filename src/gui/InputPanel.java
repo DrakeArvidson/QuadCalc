@@ -17,11 +17,11 @@ public class InputPanel extends JPanel {
 	private JTextField inA = new JTextField();
 	private JTextField inB = new JTextField();
 	private JTextField inC = new JTextField();
-	JButton calc = new JButton("Calculate");
-	JButton clear = new JButton("Clear");
-	JTextArea results = new JTextArea();
-	CalculateController controller = new CalculateController(this);
-	ClearController clearController = new ClearController(this);
+	private JButton calc = new JButton("Calculate");
+	private JButton clear = new JButton("Clear");
+	private JTextArea results = new JTextArea();
+	private CalculateController controller = new CalculateController(this);
+	private ClearController clearController = new ClearController(this);
 
 	public InputPanel() {
 		super();
