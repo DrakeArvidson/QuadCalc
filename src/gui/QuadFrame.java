@@ -8,6 +8,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
+import background.HelpListener;
+import background.InfoListener;
 import background.QuitListener;
 import background.ResetListener;
 
@@ -18,6 +20,8 @@ public class QuadFrame extends JFrame {
     public InputPanel input;
     public QuitListener quitListener = new QuitListener(this);
     public ResetListener resetListener = new ResetListener(this);
+    public InfoListener infoListener = new InfoListener(this);
+    public HelpListener helpListener = new HelpListener(this);
 
     public QuadFrame() {
         this.setTitle("Quadratic Formula Calculator");
@@ -37,9 +41,23 @@ public class QuadFrame extends JFrame {
         reset.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.KeyEvent.CTRL_MASK));
         reset.addActionListener(resetListener);
         
+        JMenu help = new JMenu("Help");
+        
+        JMenuItem info = new JMenuItem("About");
+        info.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.KeyEvent.CTRL_MASK));
+        info.addActionListener(infoListener);
+        
+        JMenuItem howTo = new JMenuItem("How-To");
+        howTo.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.KeyEvent.CTRL_MASK));
+        howTo.addActionListener(helpListener);
+        
         file.add(reset);
         file.add(quit);
         bar.add(file);
+        
+        help.add(info);
+        help.add(howTo);
+        bar.add(help);
         
         this.setJMenuBar(bar);
         
