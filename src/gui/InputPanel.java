@@ -83,6 +83,7 @@ public class InputPanel extends JPanel {
 		button.add(clear);
 
 		results.setPreferredSize(new Dimension(300, 100));
+		results.setEditable(false);
 		resultPane.add(results);
 
 		this.add(panelA);
