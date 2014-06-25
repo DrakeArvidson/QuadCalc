@@ -68,6 +68,8 @@ public class QuadFrame extends JFrame {
         input = new InputPanel();
         this.add(input, BorderLayout.CENTER);
         
+        this.getRootPane().setDefaultButton(input.getCalcButton());
+        
         this.setVisible(true);
     }
     

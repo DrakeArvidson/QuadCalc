@@ -85,7 +85,7 @@ public class InputPanel extends JPanel {
 		results.setPreferredSize(new Dimension(300, 100));
 		results.setEditable(false);
 		resultPane.add(results);
-
+		
 		this.add(panelA);
 		this.add(panelB);
 		this.add(panelC);
@@ -117,6 +117,10 @@ public class InputPanel extends JPanel {
 		else {
 			return false;
 		}
+	}
+	
+	public JButton getCalcButton() {
+		return calc;
 	}
 	
 	public void clearText() {
