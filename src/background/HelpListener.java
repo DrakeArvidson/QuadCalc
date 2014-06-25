@@ -7,6 +7,11 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
+/**
+ * ActionListener created for the Help option in the menu bar.
+ * @author darvidson
+ *
+ */
 public class HelpListener implements ActionListener {
 	
 	QuadFrame frame;

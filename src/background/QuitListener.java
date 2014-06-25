@@ -6,6 +6,11 @@ import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * ActionListener created for the Quit option in the menu bar.
+ * @author darvidson
+ *
+ */
 public class QuitListener implements ActionListener {
     
     QuadFrame frame;

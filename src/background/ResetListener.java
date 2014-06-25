@@ -6,6 +6,11 @@ import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * ActionListener created for my reset option within the menu bar.
+ * @author darvidson
+ *
+ */
 public class ResetListener implements ActionListener {
 	
 	QuadFrame frame;

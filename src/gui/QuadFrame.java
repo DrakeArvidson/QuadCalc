@@ -12,7 +12,11 @@ import background.HelpListener;
 import background.InfoListener;
 import background.QuitListener;
 import background.ResetListener;
-
+/**
+ * The frame for the whole calculator, includes all other panels.
+ * @author darvidson
+ *
+ */
 
 @SuppressWarnings("serial")
 public class QuadFrame extends JFrame {

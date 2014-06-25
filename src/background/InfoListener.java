@@ -7,6 +7,11 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JOptionPane;
 
+/**
+ * ActionListener for the About option in the menu bar.
+ * @author darvidson
+ *
+ */
 public class InfoListener implements ActionListener {	
 	
 	QuadFrame frame;

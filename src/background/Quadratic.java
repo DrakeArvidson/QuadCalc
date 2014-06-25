@@ -1,5 +1,10 @@
 package background;
 
+/**
+ * This is where the quadratic is solved, takes a, b, c, and solves for x.
+ * @author darvidson
+ *
+ */
 public class Quadratic {
     int a;
     int b;

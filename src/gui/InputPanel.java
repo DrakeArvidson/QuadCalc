@@ -13,6 +13,11 @@ import javax.swing.SwingUtilities;
 import background.CalculateController;
 import background.ClearController;
 
+/**
+ * This is the panel that contains the input fields, buttons, and results text area.
+ * @author darvidson
+ *
+ */
 @SuppressWarnings("serial")
 public class InputPanel extends JPanel {
 	private JTextField inA = new JTextField();

@@ -5,6 +5,11 @@ import gui.InputPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * ActionListener for the Calculate button, grabs the inputs, runs the calculation and displays the result.
+ * @author darvidson
+ *
+ */
 public class CalculateController implements ActionListener {
 
 	InputPanel input;
