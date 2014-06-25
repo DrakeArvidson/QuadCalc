@@ -34,9 +34,4 @@ public class Quadratic {
         }
         return result;
     }
-    
-//    public static void main(String[] args) {
-//        Quadratic quad = new Quadratic(2, 3, 1);			This was only here to test the Quadratic function.
-//        System.out.println(quad.solve());
-//    }
 }
