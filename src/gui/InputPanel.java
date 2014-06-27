@@ -4,6 +4,7 @@ import java.awt.Dimension;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JEditorPane;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -25,7 +26,7 @@ public class InputPanel extends JPanel {
 	private JTextField inC = new JTextField();
 	private JButton calc = new JButton("Calculate");
 	private JButton clear = new JButton("Clear");
-	private JTextArea results = new JTextArea();
+	private JEditorPane results = new JEditorPane();
 	private CalculateController controller = new CalculateController(this);
 	private ClearController clearController = new ClearController(this);
 
@@ -89,6 +90,7 @@ public class InputPanel extends JPanel {
 
 		results.setPreferredSize(new Dimension(300, 100));//Sets the size of the results text area
 		results.setEditable(false);//Makes it so the text area cannot be edited manually
+		results.setLineWrap(true);//Should wrap text in the text area
 		resultPane.add(results);//Add the text area to the results panel
 		
 		this.add(panelA);//adds panelA
