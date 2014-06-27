@@ -90,7 +90,7 @@ public class InputPanel extends JPanel {
 
 		results.setPreferredSize(new Dimension(300, 100));//Sets the size of the results text area
 		results.setEditable(false);//Makes it so the text area cannot be edited manually
-		results.setLineWrap(true);//Should wrap text in the text area
+		//results.setLineWrap(true);//Should wrap text in the text area
 		resultPane.add(results);//Add the text area to the results panel
 		
 		this.add(panelA);//adds panelA

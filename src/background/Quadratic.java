@@ -1,8 +1,5 @@
 package background;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 /**
  * This is where the quadratic is solved, takes a, b, c, and solves for x.
  * @author darvidson
